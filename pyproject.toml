@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fractionops"
+version = "0.1.0"
+description = "分数四则运算练习：约分、带分数与可打印 A4 练习纸"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "eastyou" }]
+keywords = ["education", "math", "fractions", "arithmetic", "worksheet", "printable"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Environment :: Console",
+  "Topic :: Education",
+]
+dependencies = []
+
+[project.scripts]
+fractionops = "fractionops.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/eastyou/fractionops"
+Source = "https://github.com/eastyou/fractionops"
+
+[tool.setuptools]
+packages = ["fractionops"]
